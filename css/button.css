@@ -1,0 +1,35 @@
+/*== 線の上を別の線が伸びる */
+
+.bt-line{
+    /*線の基点とするためrelativeを指定*/
+	position:relative;
+}
+
+/*線の設定*/
+.bt-line::before,
+.bt-line::after{
+	content:'';
+    /*絶対配置で線の位置を決める*/
+	position:absolute;
+	z-index:1;
+	bottom:0;
+	left:0;
+     /*線の形状*/   
+	/* background:#333; */
+	width:100%;
+	height:2px;
+    border-radius: 1px;
+    /*アニメーションの指定*/
+	transition:all 0.3s ease-in-out;
+}
+
+ /*hover時に伸びる線の形状*/   
+.bt-line::after{
+	width:0;
+	background:#A4BAC6;
+}
+
+ /*hover時に100%に伸びる*/   
+.bt-line:hover::after {
+	width:100%;
+}

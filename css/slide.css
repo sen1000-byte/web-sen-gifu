@@ -1,0 +1,93 @@
+.slide{
+    display: flex;
+    justify-content: center;
+    gap: 5rem 2%;
+}
+
+#mainImg{
+    width: 20%;
+    height: 53vh;
+    flex: 3;
+    position: relative;
+}
+
+#mainImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#mainImg .secondImg{
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    z-index: -1;
+}
+
+#mainImg p{
+    text-align: center;
+    font-size: 1.8rem;
+    position: absolute;
+    bottom: -3rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+#subImg{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    height: 53vh;
+    width: 15%;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+#subImg li{
+    width: 100%;
+    list-style: none;
+    height: 12.5vh;
+}
+
+#subImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#subImg .current{
+    filter: brightness(50%);
+}
+
+/*--------------スマートフォン縦--------------*/
+/* デザインの都合上、ブレイクポイントを599ではなく858pxで設定 */
+@media screen and (max-width: 858px) {
+    .slide{
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+    }
+
+    #mainImg{
+        width: 100%;
+        height: 40vh;
+        flex: 0 1 auto
+    }
+
+    #mainImg .secondImg{
+        top: 0rem;
+    }
+
+    #subImg{
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        flex-wrap: nowrap;
+        flex: 0 1 auto
+    }
+
+}

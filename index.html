@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- ビューポートの設定 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slide.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- jQueryのCDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- javaの読み込み -->
+    <script src="js/slide.js"></script>
+    <script src="js/hamburger.js"></script>
+    <title>岐阜紹介</title>
+</head>
+<body>
+    <header>
+        <div class="navigation pc">
+            <p>岐阜市</p>
+            <nav>
+                <li><a class="bt-line" href="#mountain"><span>山を知る</span></a></li>
+                <li><a class="bt-line" href="#river">川で遊ぶ</a></li>
+                <li><a class="bt-line" href="#town">街で食べる</a></li>
+                <li><a class="bt-line" href="#people">人から継ぐ</a></li>
+                <li><a class="bt-line" href="#access">アクセス</a></li>
+            </nav>
+        </div>
+        <div class="hamburger sp">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav class="globalMenuSp">
+              <ul>
+                <li><a href="#mountain">山を知る</a></li>
+                <li><a href="#river">川で遊ぶ</a></li>
+                <li><a href="#town">街で食べる</a></li>
+                <li><a href="#people">人から継ぐ</a></li>
+                <li><a href="#access">アクセス</a></li>
+              </ul>
+          </nav>
+        <h1>
+            山と、
+            <br>川と、
+            <br>街と、
+            <br>人と。
+        </h1>
+    </header>
+    <div class="main">
+        <div id="info">
+            <div class="info-main">
+                <p class="comment">自然豊かな県庁所在地</p>
+                <h3 class="object-name">岐阜市</h3>
+                <p class="short-detail">人口： 約42万人<br>総面積：　約203km<sup>2</sup></p>
+            </div>
+            <div class="info-img">
+                <img src="images/map.png">
+            </div>
+            <div class="detail">
+                <p>
+                    日本の中央部に位置する岐阜市は、美しい山々と清流に恵まれた自然
+                    豊かな場所です。また岐阜県の県庁所在地であるため、交通や施設の
+                    利便性があり、快適ながらもゆったりとした暮らしが営まれています。</p>
+            </div>
+        </div>
+
+        <div id="mountain" class="spacing">
+            <div class="mountain-heading">
+                <div class="relative">
+                    <p class="heading-letter">山</p>
+                </div>
+                <h2 class="heading vertical">山を知る</h2>
+            </div>
+            <div class="mountain-img">
+                <img src="images/gifu_castle.jpg">
+            </div>
+            <div class="mountain-text">
+                <h3 class="object-name">金華山と岐阜城</h3>
+                <p class="short-detail">斉藤道三公・織田信長公ゆかりの地</p>
+                <p class="detail">金華山の山頂に築かれた岐阜城は、斎藤道三の居城であり、1567年に
+                    織田信長公によって制圧されたと言われています。岐阜城天守閣からは、
+                    信長も見たであろう岐阜の街を一望できます。標高329mの金華山は、
+                    登山道やロープウェイが整備され、小さなお子様から大人の方にも楽し
+                    まれています。</p>
+            </div>
+        </div>
+
+        <div id="river" class="spacing">
+            <div class="river-heading">
+                <div class="relative">
+                    <p class="heading-letter">川</p>
+                </div>
+                <h2 class="heading vertical">川で遊ぶ</h2>
+            </div>
+            <div class="river-text">
+                <h3 class="object-name">長良川</h3>
+                <p class="short-detail">岐阜を代表する清流長良川</p>
+                <p class="detail">
+                    市内を流れる清流長良川は、豊かな水
+                    を育み、地元の方から欠かせない存在
+                    として愛されています。夏には伝統の
+                    長良川鵜飼が行われます。また、河原
+                    でバーベキューを楽しむなどとても賑
+                    やかです。川沿いには長良川温泉があ
+                    り、宿泊のみでなく日帰り湯も人気です。
+                </p>
+            </div>
+            <div class="river-img">
+                <img src="images/nagara_river.jpg">
+            </div>
+        </div>
+
+        <div id="town" class="spacing">
+            <div class="twon-heading">
+                <div class="relative">
+                    <p class="heading-letter">街</p>
+                </div>
+                <h2 class="heading horizontal">街で食べる</h2>
+            </div>
+            <div class="town-images slide">
+                <div id="mainImg">
+                    <img class="firstImg" src="./images/food_ba7kafe.JPG">
+                    <img class="secondImg" src="./images/food_dip_cafe.jpg">
+                    <p>ba7カフェ</p>
+                </div>
+                <ul id="subImg">
+                    <li class="current">
+                        <img src="./images/food_ba7kafe.JPG">
+                    </li>
+                    <li><img src="./images/food_dip_cafe.jpg"></li>
+                    <li><img src="./images/food_gifutanmen.jpg"></li>
+                    <li><img src="./images/food_hyuggeko-hi-.jpg"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="people" class="spacing">
+            <div class="people-heading">
+                <div class="relative">
+                    <p class="heading-letter">人</p>
+                </div>
+                <h2 class="heading horizontal">人から継ぐ</h2>
+            </div>
+            <div class="people-topics">
+                <div class="people-topic">
+                    <img src="images/night_fireworks.jpg">
+                    <div class="topic-text">
+                        <!-- <h3 class="object-name">
+                            全国選抜長良川中日花火大会<span class="date">（７月最終土曜日）</span>
+                            全国花火大会<span class="date">（８月第一土曜日）</span>
+                        </h3> -->
+                        <h3 class="object-name">
+                            全国選抜長良川中日花火大会・全国花火大会<span class="date">（７月最終土曜日・８月第一土曜日）</span>
+                        </h3>
+                        <p class="detail">
+                            清流長良川を舞台にした迫力の花火大会は、地元から県外の方まで愛されています。河原に座ってゆったり眺める花火は、忘れられない夏の思い出となること間違いなしです。
+                        </p>
+                    </div>
+                </div>
+                <div class="people-topic">
+                    <img src="images/night_machi.jpg">
+                    <div class="topic-text">
+                        <h3 class="object-name">
+                            川原町<span class="date">（通年）</span><br>
+                        </h3>
+                        <p class="detail">
+                            長良川沿いには宿泊施設や、お土産売り場、お食事処があります。河の流れを聞きながら、昔ながらの街並みをゆったり歩いてみてはいかがでしょうか。
+                        </p>
+                    </div>
+                </div>
+                <div class="people-topic">
+                    <div class="background"></div>
+                    <img src="images/night_ukai.jpg">
+                    <div class="topic-text">
+                        <h3 class="object-name">
+                            長良川鵜飼<span class="date">（5月中旬〜10月中旬）</span><br>
+                        </h3>
+                        <p class="detail">
+                            1300年以上の歴史を持つ長良川の鵜飼は、宮内庁式部職鵜匠により毎年行われております。遊覧船から眺める鵜飼は、岐阜の夏の風物詩です。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="access" class="spacing">
+            <div class="access-heading">
+                <h2 class="heading horizontal">アクセス</h2>
+            </div>
+            <div class="access-topics">
+                <div class="access-topic">
+                    <img src="images/icon_car_hoso.png">
+                    <p class="detail">
+                        大阪・岐阜市間　　約２時間半<br>東京・岐阜市間　　 　約５時間<br>名古屋駅・岐阜駅間　  約１時間
+                    </p>
+                </div>
+                <div class="access-topic">
+                    <img src="images/icon_train_hoso.png">
+                    <p class="detail">
+                        名古屋駅~JR岐阜駅　東海道本線 快速 20分<br>
+                        名鉄名古屋〜名鉄岐阜駅　名鉄名古屋本線 特急 30分<br>
+                        東京から約２時間、大阪から約１時間半(新幹線を利用)
+                    </p>
+                </div>
+                <div class="access-topic">
+                    <img src="images/icon_jet_hoso.png">
+                    <p class="detail">
+                        最寄り空港：中部国際空港（セントレア）<br>中部国際空港〜名鉄岐阜駅　特急 約１時間
+                    </p>
+                </div>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>
