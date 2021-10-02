@@ -5,11 +5,15 @@
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <!-- ビューポートの設定 -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slide.css">
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" href="css/tab.css">
+    <link rel="stylesheet" href="css/fuwat.css"> 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -19,6 +23,8 @@
     <!-- javaの読み込み -->
     <script src="js/slide.js"></script>
     <script src="js/hamburger.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="js/fuwat.js"></script>
     <title>岐阜紹介</title>
 </head>
 <body>
@@ -38,6 +44,7 @@
             <span></span>
             <span></span>
           </div>
+          <div class="humburger-space"></div>
           <nav class="globalMenuSp">
               <ul>
                 <li><a href="#mountain">山を知る</a></li>
@@ -66,9 +73,8 @@
             </div>
             <div class="detail">
                 <p>
-                    日本の中央部に位置する岐阜市は、美しい山々と清流に恵まれた自然
-                    豊かな場所です。また岐阜県の県庁所在地であるため、交通や施設の
-                    利便性があり、快適ながらもゆったりとした暮らしが営まれています。</p>
+                    日本の中央部に位置する岐阜市は、美しい山々と清流に恵まれた自然豊かな場所です。また岐阜県の県庁所在地であるため、交通や施設の利便性があり、快適ながらもゆったりとした暮らしが営まれています。
+                </p>
             </div>
         </div>
 
@@ -79,17 +85,13 @@
                 </div>
                 <h2 class="heading vertical">山を知る</h2>
             </div>
-            <div class="mountain-img">
+            <div class="mountain-img fuwat">
                 <img src="images/gifu_castle.jpg">
             </div>
             <div class="mountain-text">
                 <h3 class="object-name">金華山と岐阜城</h3>
                 <p class="short-detail">斉藤道三公・織田信長公ゆかりの地</p>
-                <p class="detail">金華山の山頂に築かれた岐阜城は、斎藤道三の居城であり、1567年に
-                    織田信長公によって制圧されたと言われています。岐阜城天守閣からは、
-                    信長も見たであろう岐阜の街を一望できます。標高329mの金華山は、
-                    登山道やロープウェイが整備され、小さなお子様から大人の方にも楽し
-                    まれています。</p>
+                <p class="detail">金華山の山頂に築かれた岐阜城は、斎藤道三の居城であり、1567年に織田信長公によって制圧されたと言われています。岐阜城天守閣からは、信長も見たであろう岐阜の街を一望できます。標高329mの金華山は、登山道やロープウェイが整備され、小さなお子様から大人の方にも楽しまれています。</p>
             </div>
         </div>
 
@@ -104,16 +106,10 @@
                 <h3 class="object-name">長良川</h3>
                 <p class="short-detail">岐阜を代表する清流長良川</p>
                 <p class="detail">
-                    市内を流れる清流長良川は、豊かな水
-                    を育み、地元の方から欠かせない存在
-                    として愛されています。夏には伝統の
-                    長良川鵜飼が行われます。また、河原
-                    でバーベキューを楽しむなどとても賑
-                    やかです。川沿いには長良川温泉があ
-                    り、宿泊のみでなく日帰り湯も人気です。
+                    市内を流れる清流長良川は、豊かな水を育み、地元の方から欠かせない存在として愛されています。夏には伝統の長良川鵜飼が行われます。また、河原でバーベキューを楽しむなどとても賑やかです。川沿いには長良川温泉があり、宿泊のみでなく日帰り湯も人気です。
                 </p>
             </div>
-            <div class="river-img">
+            <div class="river-img fuwat">
                 <img src="images/nagara_river.jpg">
             </div>
         </div>
@@ -196,7 +192,7 @@
             <div class="access-heading">
                 <h2 class="heading horizontal">アクセス</h2>
             </div>
-            <div class="access-topics">
+            <div class="access-topics pc">
                 <div class="access-topic">
                     <img src="images/icon_car_hoso.png">
                     <p class="detail">
@@ -206,7 +202,7 @@
                 <div class="access-topic">
                     <img src="images/icon_train_hoso.png">
                     <p class="detail">
-                        名古屋駅~JR岐阜駅　東海道本線 快速 20分<br>
+                        名古屋駅〜JR岐阜駅　東海道本線 快速 20分<br>
                         名鉄名古屋〜名鉄岐阜駅　名鉄名古屋本線 特急 30分<br>
                         東京から約２時間、大阪から約１時間半(新幹線を利用)
                     </p>
@@ -217,6 +213,36 @@
                         最寄り空港：中部国際空港（セントレア）<br>中部国際空港〜名鉄岐阜駅　特急 約１時間
                     </p>
                 </div>
+            </div>
+
+            <div class="tab-container sp">
+                <!-- タブメニューactiveクラスに、クリック済のデザインを設定したcssを指定 -->
+                <ul class="tab">
+                    <li class="active"><img src="images/icon_car_hoso.png"></li>
+                    <li><img src="images/icon_train_hoso.png"></li>
+                    <li><img src="images/icon_jet_hoso.png"></li>
+                </ul>
+    
+                <!-- コンテンツ全体を非表示にし、showクラスが付いたコンテンツのみ表示 -->
+                <div class="area detail">
+                    <ul class="show">
+                        <li>大阪・岐阜市間　　 　　約２時間半</li>
+                        <li>東京・岐阜市間　　 　　約５時間</li>
+                        <li>名古屋駅・岐阜駅間　　　約１時間</li>
+                    </ul>
+                    <ul>
+                        <li>名古屋駅〜JR岐阜駅　　20分（東海道本線・快速）</li>
+                        <li>名鉄名古屋〜名鉄岐阜駅　　30分（名鉄名古屋本線・特急）</li>
+                        <li>東京〜岐阜駅　　約２時間 (新幹線を利用）</li>
+                        <li>大阪〜岐阜駅　　約１時間半 (新幹線を利用）</li>
+                    </ul>
+                    <ul>
+                        <li>最寄り空港：　中部国際空港（セントレア）</li>
+                        <li>中部国際空港〜名鉄岐阜駅　約１時間（特急）</li>
+                    </ul>
+                </div>
+            </div>
+            
         </div>
     </div>
     <footer>

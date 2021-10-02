@@ -8,4 +8,7 @@ $(function() {
             $('.globalMenuSp').removeClass('active');
         }
     });
+
+    // 背景をクリックしたときにメニューを閉じるようにする
+    
 });
