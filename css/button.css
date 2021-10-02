@@ -33,3 +33,93 @@
 .bt-line:hover::after {
 	width:100%;
 }
+
+
+/* --------------------背景----------------- */
+.bt-bg{
+    /*矢印の基点*/
+	position: relative;
+
+	text-decoration: none;
+	display: inline-block;
+	/* background:#FFF8BA; */
+	color:#707070;
+	border: 1px solid #707070;
+    padding: 0.9rem 6rem 0.9rem 5rem;
+	/* border-radius:2.5rem; */
+    text-align: center;
+    outline: none;
+
+	font-size: 1.2rem;
+
+	/* 調節 */
+	margin-top: 7rem;
+
+    /*アニメーションの指定*/
+    transition: ease 0.5s;
+}
+
+.bt-bg:hover{
+	background-color: #707070;
+	color: #fff;
+}
+
+.back-food .bt-bg{
+	padding: 1rem 5rem 1rem 6rem;
+}
+
+
+/* --------------------矢印マーク----------------- */
+/* 矢印が右に移動 */
+
+.bt-arrow::after{
+    content: '';
+    /*絶対配置で矢印の位置を決める*/
+	position: absolute;
+    top:35%;
+    right: 2.5rem;
+    /*矢印の形状*/
+    width: 10px;
+    height: 10px;
+    border-top: 1.5px solid #707070;
+    border-right: 1.5px solid #707070;
+    transform: rotate(45deg);
+    /*アニメーションの指定*/
+    transition: all .5s;
+}
+
+/*hoverした際の移動*/
+.bt-arrow:hover::after{
+    right: 2rem;
+	border-color: #fff;
+}
+
+/*----------- 戻る向き----------- */
+.bt-arrow-back::after{
+    content: '';
+    /*絶対配置で矢印の位置を決める*/
+	position: absolute;
+    top:35%;
+    left: 2.5rem;
+    /*矢印の形状*/
+    width: 10px;
+    height: 10px;
+    border-top: 1.5px solid #707070;
+    border-right: 1.5px solid #707070;
+    transform: rotate(-135deg);
+    /*アニメーションの指定*/
+    transition: all .5s;
+}
+
+/*hoverした際の移動*/
+.bt-arrow-back:hover:after{
+    left: 2rem;
+	border-color: #fff;
+}
+
+/* --------------------調整のため------------------- */
+@media screen and (max-width: 858px) {
+	.bt-bg{
+		margin-top: 3rem;
+	}
+}

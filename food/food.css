@@ -1,0 +1,51 @@
+
+header{
+    background-position: 50% 70%;
+    height: 40vh;
+}
+
+.main{
+    padding-top: 10rem;
+}
+
+.foods{
+    padding-top: 5rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.food {
+    width: 250px;
+}
+
+
+.food img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.food .object-name {
+    font-weight: 400;
+    font-size: 1.6rem;
+    padding-top: 2rem;
+}
+
+.food .detail{
+    padding-bottom: 10rem;
+}
+
+
+/*----------------------------レスポンシブ----------------------------*/
+/*--------------スマートフォン縦--------------*/
+/* デザインの都合上、少し599ではなく、大きめの設定にした */
+@media screen and (max-width: 650px) {
+    .foods{
+        column-gap: 4%;
+    }
+    .food {
+        width: 48%;
+    }
+}
